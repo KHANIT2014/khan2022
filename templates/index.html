@@ -11,6 +11,15 @@
     <input type="submit">
 </form>
 
+{% if user.is_authenticated %}
+<a href="App4/logout">logout</a>
+{% else %}
+
+<a href="App2/signup">signup</a>
+<a href="App3/login">login</a>
+{% endif %}
+
+
 
 <p id="demo"></p>
 <h6>this is <strong>Home page</strong></h6>

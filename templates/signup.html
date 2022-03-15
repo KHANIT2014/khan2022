@@ -5,9 +5,16 @@
     <title>signup </title>
 </head>
 <body>
-<form action="signup" method="post">
+<form action="" method="post">
+    {%csrf_token%}
+    User name: <input type="text" name="username"><br>
+    First Name: <input type="text" name="first_name"><br>
+    Last Name: <input type="text" name="last_name"><br>
+    email: <input type="email" name="email"><br>
+    password: <input type="password" name="password"><br>
+    date: <input type="datetime-local" name="date_joined"><br>
 
 
-</form>
-</body>
+    <input type="submit">
+ </body>
 </html>
